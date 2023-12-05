@@ -1,0 +1,25 @@
+#!/bin/bash
+usuario="liranjas"
+
+mkdir -p ./uffs/trabalhos
+mkdir -p ./uffs/textos
+cd ./uffs
+touch teste.txt
+echo "2023000564" > teste.txt
+echo "Isadora Zimmer" >> teste.txt
+echo "Cidade" >> teste.txt
+cp teste.txt teste1.txt
+cp teste.txt teste.asc
+cp ./*.txt ./trabalhos/
+mv teste.asc ./textos/
+ls -l ./textos
+chmod ug+rw,o+r teste.txt
+chmod u+rw,go+r teste1.txt
+mkdir ~/uffs_backup
+cp -r * /home/liranjas/uffs_backup/
+cp textos/teste.asc trabalhos/
+rm -r textos/
+mv ./trabalhos/teste.asc ./trabalhos/outro_texto.txt
+cat ./trabalhos/outro_texto.txt
+grep "Isadora" teste.txt
+
