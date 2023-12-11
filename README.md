@@ -1,2 +1,2 @@
 # Informatica
-Simple script for WSL
+Simple script in WSL
