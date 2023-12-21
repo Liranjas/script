@@ -1,2 +1,4 @@
 # Informatica
-Simple script in WSL
+(ENG) Simple script for training in WSL 
+
+(POR)Exercícios da CCR de Informática
